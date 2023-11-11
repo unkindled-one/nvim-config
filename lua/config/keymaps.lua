@@ -14,4 +14,3 @@ keymap.set("n", "<C-l>", "<C-w>l", opts) -- down
 -- Window Management
 keymap.set("n", "<leader>sv", ":vsplit<CR>", opts) -- Split vertically
 keymap.set("n", "<leader>sh", ":split<CR>", opts) -- Split horizontally 
-keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- Toggle Minimize 
