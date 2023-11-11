@@ -1,0 +1,5 @@
+telescope
+which-key
+nvim-tree
+Mason (and subsequent lsps)
+styles!
