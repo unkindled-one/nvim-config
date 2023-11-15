@@ -47,7 +47,11 @@ return {
       opts.desc = "Show documentation for what is under cursor"
       keymap.set("n", "K", vim.lsp.buf.hover, opts)
     end
-    lspconfig.pyright.setup{}
+    local capabilities = cmp_nvim_lsp.default_capabilities()
+    lspconfig.pyright.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
     lspconfig.lua_ls.setup{}
     lspconfig.clangd.setup{}
     lspconfig.rust_analyzer.setup {
@@ -55,7 +59,6 @@ return {
         ["rust-analyzer"] = {},
       },
     }
-    local capabilities = cmp_nvim_lsp.default_capabilities()
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
