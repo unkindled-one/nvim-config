@@ -1,6 +1,7 @@
 local opts = {
   ensure_installed = {
     "pyright",
+    "rust_analyzer",
   }
 }
 

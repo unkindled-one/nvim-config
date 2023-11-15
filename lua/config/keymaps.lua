@@ -14,3 +14,12 @@ keymap.set("n", "<C-l>", "<C-w>l", opts) -- down
 -- Window Management
 keymap.set("n", "<leader>sv", ":vsplit<CR>", opts) -- Split vertically
 keymap.set("n", "<leader>sh", ":split<CR>", opts) -- Split horizontally 
+
+-- Comments
+vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap=false })
+vim.api.nvim_set_keymap("v", "<C-_>", "gc", { noremap=false })
+
+-- Indentation
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+
