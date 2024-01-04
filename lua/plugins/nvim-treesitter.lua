@@ -13,6 +13,9 @@ local config = function()
       "c",
       "lua",
       "rust",
+      "regex",
+      "vim",
+      "markdown_inline"
     },
     auto_install = true,
     highlight = {

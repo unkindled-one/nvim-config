@@ -23,3 +23,6 @@ vim.api.nvim_set_keymap("v", "<C-_>", "gc", { noremap=false })
 keymap.set("v", "<", "<gv")
 keymap.set("v", ">", ">gv")
 
+-- Misc
+keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, desc = "save file" })
+keymap.set("n", "<leader>p", "@:<CR>", { noremap = true, desc = "Rerun previous command" })

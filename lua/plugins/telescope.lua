@@ -8,6 +8,7 @@ local config = function()
         i = {
           ["<C-j>"] = "move_selection_next",
           ["<C-k>"] = "move_selection_previous",
+          ["<esc>"] = require("telescope.actions").close,
         },
       },
     },
@@ -16,7 +17,7 @@ end
 
 
 return {
-  "nvim-telescope/telescope.nvim", 
+  "nvim-telescope/telescope.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim"
   },

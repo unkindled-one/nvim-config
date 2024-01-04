@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+opt.swapfile = false
+
 -- Tab / Indentation
 opt.tabstop = 2
 opt.shiftwidth = 2

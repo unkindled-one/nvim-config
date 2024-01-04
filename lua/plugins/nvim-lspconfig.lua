@@ -17,10 +17,10 @@ return {
       opts.buffer = bufnr
 
       --set keybinds
-      vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+      vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
       vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
       vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-      vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+      vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
       opts.desc = "Show LSP references"
       keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
@@ -54,6 +54,7 @@ return {
     })
     lspconfig.lua_ls.setup{}
     lspconfig.clangd.setup{}
+    lspconfig.tsserver.setup{}
     lspconfig.rust_analyzer.setup {
       settings = {
         ["rust-analyzer"] = {},
