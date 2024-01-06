@@ -52,10 +52,21 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
-    lspconfig.lua_ls.setup{}
-    lspconfig.clangd.setup{}
-    lspconfig.tsserver.setup{}
+    lspconfig.lua_ls.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+    lspconfig.clangd.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+    lspconfig.tsserver.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
     lspconfig.rust_analyzer.setup {
+      capabilities = capabilities,
+      on_attach = on_attach,
       settings = {
         ["rust-analyzer"] = {},
       },
