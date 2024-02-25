@@ -27,5 +27,6 @@ return {
     keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
     keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
     keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),
+    keymap.set("n", "<leader>fz", ":Telescope current_buffer_fuzzy_find<CR>"),
   },
 }
