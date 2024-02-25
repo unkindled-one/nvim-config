@@ -2,8 +2,7 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 -- Directory Navigation
-keymap.set("n", "<leader>ft", ":NvimTreeFocus<CR>", opts)
-keymap.set("n", "<leader>fe", ":NvimTreeToggle<CR>", opts)
+keymap.set("n", "<leader>o", ":Oil<CR>", opts)
 
 -- Pane Navigation
 keymap.set("n", "<C-h>", "<C-w>h", opts) -- left
