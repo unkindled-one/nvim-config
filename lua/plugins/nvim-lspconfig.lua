@@ -47,6 +47,8 @@ return {
       keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
       opts.desc = "Show documentation for what is under cursor"
       keymap.set("n", "K", vim.lsp.buf.hover, opts)
+      opts.desc = "Show function signature help"
+      keymap.set("i", "<C-s>", vim.lsp.buf.signature_help, opts)
     end
     local capabilities = cmp_nvim_lsp.default_capabilities()
     lspconfig.pyright.setup({
