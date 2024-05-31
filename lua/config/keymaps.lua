@@ -26,6 +26,5 @@ keymap.set("v", ">", ">gv")
 keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, desc = "save file" })
 keymap.set("n", "<leader>p", "@:<CR>", { noremap = true, desc = "Rerun previous command" })
 
-keymap.set('t', '<C-d>', '<C-\\><C-n>')
-keymap.set('n', '<leader>st', ':split()<CR>:term<CR>', { noremap = true, desc = 'Toggle Terminal' })
-
+keymap.set('t', "<C-d>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+keymap.set("n", "<leader>st", ":split()<CR>:term<CR>", { noremap = true, desc = "Toggle Terminal" })
