@@ -13,8 +13,8 @@ return {
 		vim.keymap.set({ "n", "v" }, "<Leader>mp", function()
 			conform.format({
 				lsp_fallback = true,
-				-- timeout_ms = 1000,
-				timeout_ms = 10000,
+				-- timeout_ms = 10000,
+				timeout_ms = 1000,
 			})
 		end, { desc = "Formats the current file." })
 	end,
