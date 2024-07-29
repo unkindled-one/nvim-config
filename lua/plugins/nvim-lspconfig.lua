@@ -75,11 +75,6 @@ return {
         ["rust-analyzer"] = {},
       },
     }
-    lspconfig.gdtoolkit.setup {
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { "gd", "gdscript", "gdscript3" }
-    }
 
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
