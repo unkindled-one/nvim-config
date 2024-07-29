@@ -9,6 +9,5 @@ return {
   opts = {},
   config = function ()
     require('barbecue').setup()
-    
   end
 }

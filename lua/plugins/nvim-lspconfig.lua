@@ -56,7 +56,7 @@ return {
       lineFoldingOnly = true
     }
 
-    lspconfig.pyright.setup({
+    lspconfig.basedpyright.setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
@@ -68,10 +68,6 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
-    lspconfig.tsserver.setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
     lspconfig.rust_analyzer.setup {
       capabilities = capabilities,
       on_attach = on_attach,
@@ -79,14 +75,10 @@ return {
         ["rust-analyzer"] = {},
       },
     }
-    lspconfig.hls.setup {
+    lspconfig.gdtoolkit.setup {
       capabilities = capabilities,
       on_attach = on_attach,
-    }
-    lspconfig.powershell_es.setup {
-      bundle_path = "G:/Software/PowerShellEditorServices/module",
-      capabilities = capabilities,
-      on_attach = on_attach,
+      filetypes = { "gd", "gdscript", "gdscript3" }
     }
 
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }

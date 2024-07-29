@@ -23,6 +23,7 @@ local config = function()
       additional_vim_regex_highlighting = true,
     }
   })
+  require 'nvim-treesitter.install'.compilers = { 'zig', 'cl' }
 end
 
 return {
