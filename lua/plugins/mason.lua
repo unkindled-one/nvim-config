@@ -1,13 +1,13 @@
 return {
-  "williamboman/mason.nvim",
-  cmd = "Mason",
-  event = { "BufReadPre", "BufNewFile" },
+  'williamboman/mason.nvim',
+  cmd = 'Mason',
+  event = { 'BufReadPre', 'BufNewFile' },
   opts = {
     ui = {
       icons = {
-        package_installed = "✓",
-        package_pending = "➜",
-        package_uninstalled = "✗"
+        package_installed = '✓',
+        package_pending = '➜',
+        package_uninstalled = '✗'
       }
     }
   }

@@ -3,5 +3,5 @@ return {
   config = function ()
     require('gitsigns').setup()
   end,
-  event = { "BufReadPre", "BufNewFile" },
+  event = { 'BufReadPre', 'BufNewFile' },
 }

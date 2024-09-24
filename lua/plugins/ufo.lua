@@ -1,16 +1,16 @@
 return {
-  "kevinhwang91/nvim-ufo",
-  dependencies = { "kevinhwang91/promise-async" },
-  event = { "BufReadPre", "BufNewFile" },
+  'kevinhwang91/nvim-ufo',
+  dependencies = { 'kevinhwang91/promise-async' },
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function ()
-    local ufo = require("ufo")
+    local ufo = require('ufo')
     vim.o.foldcolumn = '0'
     vim.o.foldlevel = 99
     vim.foldlevelstart = 99
     vim.o.foldenable = true
 
-    vim.keymap.set("n", "zR", ufo.openAllFolds)
-    vim.keymap.set("n", "zM", ufo.closeAllFolds)
+    vim.keymap.set('n', 'zR', ufo.openAllFolds)
+    vim.keymap.set('n', 'zM', ufo.closeAllFolds)
 
     -- setup lsp as provider
     local capabilities = vim.lsp.protocol.make_client_capabilities()

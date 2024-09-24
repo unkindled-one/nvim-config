@@ -1,12 +1,12 @@
 local opts = {
   ensure_installed = {
-    "rust_analyzer",
+    'rust_analyzer',
   }
 }
 
 return {
-  "williamboman/mason-lspconfig.nvim",
+  'williamboman/mason-lspconfig.nvim',
   opts = opts,
-  event = "BufReadPre",
-  dependencies = "williamboman/mason.nvim"
+  event = 'BufReadPre',
+  dependencies = 'williamboman/mason.nvim'
 }
