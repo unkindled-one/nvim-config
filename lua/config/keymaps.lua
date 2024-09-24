@@ -24,6 +24,7 @@ keymap.set("v", ">", ">gv")
 
 -- Misc
 keymap.set("n", "<leader>w", ":w<CR>", { noremap = true, desc = "save file" })
+keymap.set("n", "<leader>q", ":q<CR>", { noremap = true, desc = "quit file" })
 keymap.set("n", "<leader>p", "@:<CR>", { noremap = true, desc = "Rerun previous command" })
 
 keymap.set('t', "<esc><esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
