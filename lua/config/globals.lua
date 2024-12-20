@@ -16,4 +16,5 @@ vim.o.shellpipe  = '2>&1 | %%{ "$_" } | tee %s; exit $LastExitCode'
 vim.o.shellquote = ''
 vim.o.shellxquote = ''
 
-vim.lsp.inlay_hint.enable()
+-- vim.lsp.inlay_hint.enable()
+vim.cmd('set termguicolors')
