@@ -1,7 +1,7 @@
 return {
-  'dgagn/diagflow.nvim',
-  event = 'LspAttach',
-  opts = {
-    scope = 'line'
-  }
+	"dgagn/diagflow.nvim",
+	event = "LspAttach",
+	opts = {
+		scope = "line",
+	},
 }

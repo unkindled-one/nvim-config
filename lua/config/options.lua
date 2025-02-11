@@ -16,7 +16,7 @@ opt.ignorecase = true
 opt.smartcase = true
 opt.hlsearch = false
 
--- Appearance 
+-- Appearance
 opt.termguicolors = true
 opt.number = true
 opt.cmdheight = 1
@@ -35,4 +35,3 @@ opt.iskeyword:append("-")
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.encoding = "utf-8"
-
